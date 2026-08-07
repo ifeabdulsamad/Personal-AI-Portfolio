@@ -727,23 +727,6 @@ a {
   box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
 }
 
-.project-card::before {
-  content: '';
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 2px;
-  background: transparent;
-  transition: background 0.25s ease;
-}
-
-.project-card:hover::before {
-  background: var(--accent);
-}
-
-.status {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.35rem 0.7rem;
