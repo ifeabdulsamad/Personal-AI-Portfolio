@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:js": "esbuild scripts.js --minify --outfile=scripts.min.js",
-    "build:css": "esbuild styles.css --minify --outfile=styles.min.css",
-    "build": "npm run build:js && npm run build:css"
+    "build:js": "node init && esbuild scripts.js --minify --outfile=scripts.min.js",
+    "build:css": "node init && esbuild styles.css --minify --outfile=styles.min.css",
+    "build": "node init && npm run build:js && npm run build:css"
   },
   "devDependencies": {
     "esbuild": "^0.19.12"
